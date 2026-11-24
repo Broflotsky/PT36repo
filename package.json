@@ -1,0 +1,29 @@
+{
+  "name": "pt36m5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "test:manual": "tsx src/test.ts",
+    "schemas": "tsx src/schemas/generate-schemas.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "inspector": "npx @modelcontextprotocol/inspector@0.22.0 node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@types/node": "^26.6.6",
+    "dotenv": "^16.6.1",
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
